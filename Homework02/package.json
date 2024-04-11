@@ -1,6 +1,6 @@
 {
   "name": "valerii-simple-password-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Генератор паролей",
   "main": "passwordGenerator.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "passgen": "index.js"
   },
   "repository": {
-    "git": "https://github.com/Cos125RUS/JavaScript.Node.js.Homeworks/tree/hw02"
+    "type": "git",
+    "url": "https://github.com/Cos125RUS/JavaScript.Node.js.Homeworks/tree/hw02"
   },
   "keywords": [
     "pass",

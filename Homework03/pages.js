@@ -1,15 +1,12 @@
 'use strict'
 
-const page = (title, count, link) => {
-    return `<h1>${title}</h1>
-    <p>Просмотров: ${count}</p>
-    <a href="${link}">Ссыдка на страницу ${link}</a>`;
+const home = {
+    title: 'Корневая страница', 
+    href: '/about'
 };
-const home = (count) => {
-    return page('Корневая страница', count, '/about');
-};
-const about = (count) => {
-    return page('Страница about', count, '/');
+const about = {
+    title: 'Страница about', 
+    href: '/'
 };
 
 module.exports = { home, about };

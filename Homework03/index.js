@@ -13,6 +13,9 @@ const counter = count.load(countPath);
 
 const app = express();
 
+app.set('view engine', 'pug');
+app.use(express.static('static'));
+
 app.use((req, res, next) => {
     counter[req.url]++;
     count.write(countPath, counter);
@@ -20,11 +23,11 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.send(pages.home(counter['/']));
+    res.render('page', { ...pages.home, count: counter['/'] });
 });
 
 app.get('/about', (req, res) => {
-    res.send(pages.about(counter['/about']));
+    res.render('page', { ...pages.about, count: counter['/about'] });
 });
 
 app.listen(port, () => console.log(`Started on port ${port}`));

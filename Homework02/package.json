@@ -1,0 +1,29 @@
+{
+  "name": "valerii-simple-password-generator",
+  "version": "1.0.3",
+  "description": "Генератор паролей",
+  "main": "passwordGenerator.js",
+  "scripts": {
+    "start": "node ./passwordGenerator.js"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "passgen": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cos125RUS/JavaScript.Node.js.Homeworks/tree/hw02"
+  },
+  "keywords": [
+    "pass",
+    "password",
+    "generate",
+    "generator",
+    "passwordGenerator"
+  ],
+  "author": "Valerii Panov",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^4.1.1"
+  }
+}
